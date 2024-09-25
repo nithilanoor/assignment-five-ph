@@ -40,6 +40,8 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
         `
         document.getElementById('history-container').appendChild(div);
 
+        alert('CONGRATULATIONS! You have Donated SUCCESSFULLY.')
+
     }
     else{
         alert('Invalid Donation amount.')
@@ -91,6 +93,8 @@ document.getElementById('btn-donate-two').addEventListener('click', function(eve
         `
         document.getElementById('history-container').appendChild(div);
 
+        alert('CONGRATULATIONS! You have Donated SUCCESSFULLY.')
+
     }
     else{
         alert('Invalid Donation amount.')
@@ -141,6 +145,8 @@ document.getElementById('btn-donate-three').addEventListener('click', function(e
             <p>Date: ${new Date}</p>
         `
         document.getElementById('history-container').appendChild(div);
+
+        alert('CONGRATULATIONS! You have Donated SUCCESSFULLY.')
 
     }
     else{
