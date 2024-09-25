@@ -4,8 +4,10 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
     const addDonate = document.getElementById('input-donate').value;
 
     // console.log(addDonate);
+    const balance = document.getElementById('account-balance').innerText;
+    const balanceNumber = parseFloat(balance);
 
-    if(isNaN(addDonate) || addDonate < 0){
+    if(isNaN(addDonate) || addDonate < 0 || addDonate > balanceNumber){
         alert('Invalid Donation amount.');
         return;
     }
@@ -37,8 +39,10 @@ document.getElementById('btn-donate-two').addEventListener('click', function(eve
     const addDonate = document.getElementById('input-donate-two').value;
 
     // console.log(addDonate);
+    const balance = document.getElementById('account-balance').innerText;
+    const balanceNumber = parseFloat(balance);
 
-    if(isNaN(addDonate) || addDonate < 0){
+    if(isNaN(addDonate) || addDonate < 0 || addDonate > balanceNumber){
         alert('Invalid Donation amount.');
         return;
     }
@@ -70,8 +74,10 @@ document.getElementById('btn-donate-three').addEventListener('click', function(e
     const addDonate = document.getElementById('input-donate-three').value;
 
     // console.log(addDonate);
+    const balance = document.getElementById('account-balance').innerText;
+    const balanceNumber = parseFloat(balance);
 
-    if(isNaN(addDonate) || addDonate < 0){
+    if(isNaN(addDonate) || addDonate < 0 || addDonate > balanceNumber){
         alert('Invalid Donation amount.');
         return;
     }
